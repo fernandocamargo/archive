@@ -1,0 +1,370 @@
+@import 'reset-min.css';
+@import 'common.css';
+
+html,
+body{
+	background: url(../img/template-body-background.jpg) center top repeat-y;
+}
+
+div#wrapper{
+	width: 1004px;
+}
+
+div#highlights{
+	background: url(../img/template-slider-background.gif) 121px 3px no-repeat;
+	height: 337px;
+}
+
+div#highlights div#last-slide,
+div#highlights div#current-slide,
+div#highlights h1,
+div#highlights h2,
+div#highlights p.subtitle,
+div#highlights h3,
+div#highlights p.image,
+div#highlights p.frame{
+	position: absolute;
+	z-index: 8;
+}
+
+div#highlights div#last-slide,
+div#highlights div#last-slide div.image,
+div#highlights div#current-slide,
+div#highlights div#current-slide div.image{
+	height: 310px;
+	width: 833px;
+}
+
+div#highlights div#last-slide,
+div#highlights div#current-slide{
+	margin-left: 121px;
+	top: 29px;
+}
+
+div#highlights div#last-slide,
+div#highlights div#last-slide div.image{
+	z-index: 1;
+}
+
+div#highlights div#last-slide div.image{
+	/* background: url(../img/slider-other-cards-01.png) no-repeat; */
+}
+
+body.ua-ie6 div#highlights div#last-slide div.image{
+	/* background: transparent; */
+	/* filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/santander/50namao/site/img/slider-other-cards-01.png', sizingMethod='image', enabled='true'); */
+}
+
+div#highlights div#current-slide,
+div#highlights div#current-slide div.image{
+	z-index: 2;
+}
+
+div#highlights div#current-slide{
+	filter: alpha(opacity=0);
+	opacity: 0;
+	-moz-opacity: 0;
+}
+
+div#highlights div#current-slide div.image{
+	/* background: url(../img/slider-other-cards-02.png) no-repeat; */
+}
+
+body.ua-ie6 div#highlights div#current-slide div.image{
+	/* background: transparent; */
+	/* filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/santander/50namao/site/img/slider-other-cards-02.png', sizingMethod='image', enabled='true'); */
+}
+
+div#highlights h1,
+div#highlights h1 a,
+div#highlights h1 a:hover,
+div#highlights p.subtitle,
+div#highlights h3,
+div#highlights p.image,
+div#highlights p.frame{
+	display: block;
+	overflow: hidden;
+	text-indent: -9999px;
+}
+
+div#highlights h1,
+div#highlights h1 a,
+div#highlights h1 a:hover{
+	height: 228px;
+	width: 370px;
+}
+
+div#highlights h1{
+	top: 62px;
+}
+
+div#highlights h1 a,
+div#highlights h1 a:hover{
+	background: url(../img/logo-370x228-other-cards.png) no-repeat;
+	cursor: pointer;
+}
+
+body.ua-ie6 div#highlights h1 a,
+body.ua-ie6 div#highlights h1 a:hover{
+	background: transparent;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/santander/50namao/site/img/logo-370x228-other-cards.png', sizingMethod='image', enabled='true');
+}
+
+div#highlights h2{
+	display: none;
+}
+
+div#highlights p.subtitle{
+	background: url(../img/template-slider-title-other-cards.png) no-repeat;
+	height: 177px;
+	margin-left: 717px;
+	width: 284px;
+}
+
+body.ua-ie6 div#highlights p.subtitle{
+	background: transparent;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/santander/50namao/site/img/template-slider-title-other-cards.png', sizingMethod='image', enabled='true');
+}
+
+div#highlights h3{
+	background: url(../img/template-slider-subtitle-other-cards.png) no-repeat;
+	height: 134px;
+	margin-left: 836px;
+	width: 168px;
+	z-index: 4;
+	top: 130px;
+}
+
+body.ua-ie6 div#highlights h3{
+	background: transparent;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/santander/50namao/site/img/template-slider-subtitle-other-cards.png', sizingMethod='image', enabled='true');
+}
+
+div#highlights p.image{
+	background: url(../img/template-slider-illustrated-image-others-cards.png) no-repeat;
+	height: 104px;
+	margin-left: 685px;
+	width: 314px;
+	top: 283px;
+}
+
+body.ua-ie6 div#highlights p.image{
+	background: transparent;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/santander/50namao/site/img/template-slider-illustrated-image-others-cards.png', sizingMethod='image', enabled='true');
+}
+
+div#highlights p.frame{
+	background: url(../img/template-slider-background-bottom.png) no-repeat;
+	height: 35px;
+	margin-left: 293px;
+	width: 291px;
+	top: 302px;
+}
+
+body.ua-ie6 div#highlights p.frame{
+	background: transparent;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/santander/50namao/site/img/template-slider-background-bottom.png', sizingMethod='image', enabled='true');
+}
+
+div#how-to-participate{
+	background: url(../img/template-how-to-participate-background.png) no-repeat;
+	height: 358px;
+	margin-left: 293px;
+	position: relative;
+	z-index: 7;
+}
+
+body.ua-ie6 div#how-to-participate{
+	background: transparent;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/santander/50namao/site/img/template-how-to-participate-background.png', sizingMethod='image', enabled='true');
+}
+
+div#how-to-participate h2{
+	background: url(../img/template-how-to-participate-title-background.gif) no-repeat;
+	margin-left: 3px;
+	padding: 6px 0 7px 36px;
+	position: relative;
+	top: -1px;
+}
+
+div#how-to-participate h2 a,
+div#how-to-participate h2 a:hover{
+	background: url(../img/template-how-to-participate-title.gif) no-repeat;
+	display: block;
+	height: 18px;
+	overflow: hidden;
+	text-indent: -9999px;
+	width: 299px;
+}
+
+div#how-to-participate div.content{
+	margin-left: 42px;
+	width: 354px;
+}
+
+div#how-to-participate div.content ol,
+div#how-to-participate div.content ol li,
+div#how-to-participate div.content ol li span{
+	color: #a21218;
+	font: bold 12px Arial;
+}
+
+div#how-to-participate div.content ol li{
+	list-style: decimal inside none;
+	margin-top: 15px;
+}
+
+div#how-to-participate div.content ol li span{
+	color: #000;
+	font-weight: normal;
+	line-height: 15px;
+	padding-left: 10px;
+}
+
+div#how-to-participate div.content ol li span strong{
+	font-weight: bold;
+}
+
+div#how-to-participate div.content h3{
+	left: 125px;
+	top: 28px;
+	position: relative;
+}
+
+div#how-to-participate div.content h3,
+div#how-to-participate div.content h3 a,
+div#how-to-participate div.content h3 a:hover{
+	cursor: pointer;
+	display: block;
+	overflow: hidden;
+	text-indent: -9999px;
+}
+
+div#how-to-participate div.content h3 a,
+div#how-to-participate div.content h3 a:hover{
+	background: url(../img/template-how-to-participate-button-send-to-friend.png) no-repeat;
+	height: 38px;
+	width: 265px;
+}
+
+body.ua-ie6 div#how-to-participate div.content h3 a,
+body.ua-ie6 div#how-to-participate div.content h3 a:hover{
+	background: transparent;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/santander/50namao/site/img/template-how-to-participate-button-send-to-friend.png', sizingMethod='image', enabled='true');
+}
+
+div.disclaimer.how-to-participate{
+	left: 760px;
+	margin-bottom: -84px;
+	position: relative;
+	width: 217px;
+	top: -265px;
+	z-index: 10;
+}
+
+body.ua-ie6 div.disclaimer.how-to-participate{
+	left: 770px;
+	top: -235px;
+}
+
+body.ua-ie9 div.disclaimer.how-to-participate{
+	margin-bottom: -76px;
+}
+
+div.disclaimer,
+div.disclaimer p{
+	color: #474747;
+	font: normal 11px Arial;
+}
+
+div#confirm-participation{
+	background: url(../img/template-confirm-participation-background.png) no-repeat;
+	height: 397px;
+	margin-left: 304px;
+	padding-top: 30px;
+	position: relative;
+	z-index: 7;
+}
+
+body.ua-ie6 div#confirm-participation{
+	background: transparent;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/santander/50namao/site/img/template-confirm-participation-background.png', sizingMethod='image', enabled='true');
+}
+
+div#confirm-participation h2{
+	background: url(../img/template-confirm-participation-title-background.gif) no-repeat;
+	margin-left: 94px;
+	padding: 6px 0 3px 52px;
+	position: relative;
+}
+
+div#confirm-participation h2 a,
+div#confirm-participation h2 a:hover{
+	background: url(../img/template-confirm-participation-title.gif) no-repeat;
+	display: block;
+	height: 22px;
+	overflow: hidden;
+	text-indent: -9999px;
+	width: 288px;
+}
+
+div#confirm-participation iframe#confirm_participation_iframe{
+	background: transparent;
+	border: transparent;
+	height: 324px;
+	margin: 10px 0 0 130px;
+	width: 445px;
+}
+
+div#chat{
+	background: url(../img/template-chat-background.png) no-repeat;
+	height: 629px;
+	margin-left: 263px;
+	padding-top: 30px;
+	position: relative;
+	z-index: 7;
+}
+
+body.ua-ie6 div#chat{
+	background: transparent;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/santander/50namao/site/img/template-chat-background.png', sizingMethod='image', enabled='true');
+}
+
+div#chat h2{
+	display: none;
+}
+
+div#chat iframe#chat_iframe{
+	background: transparent;
+	height: 345px;
+	margin: 185px 0 0 35px;
+	width: 668px;
+}
+
+div.disclaimer.chat{
+	left: 340px;
+	position: relative;
+	top: -83px;
+	z-index: 10;
+}
+
+div.social.chat {
+    left: 550px;
+    position: relative;
+    top: -90px;
+    z-index: 10;
+}
+
+iframe#twitter_iframe{
+	border: none;
+	height: 35px;
+	overflow: hidden;
+	width: 65px;
+}
+
+iframe#facebook_iframe{
+	border: none;
+	height: 35px;
+	overflow: hidden;
+	width: 450px;
+}

@@ -1,0 +1,26 @@
+*{
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body{
+	height: 100%;
+	width: 100%;
+}
+
+html{
+	overflow: -moz-scrollbars-vertical;
+}
+
+body{
+	background-color: #fff;
+	text-align: center;
+}
+
+div#wrapper{
+	margin: 0 auto;
+	text-align: left;
+	width: 986px;
+}

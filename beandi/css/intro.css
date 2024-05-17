@@ -1,0 +1,113 @@
+@import 'reset-min.css';
+@import 'common.css';
+
+div#wrapper{
+	background: url(../img/intro-body-background.jpg) center top no-repeat;
+	height: 582px;
+	min-height: 582px;
+}
+
+div#intro h1,
+div#intro h1 a,
+div#intro h1 a:hover{
+	display: block;
+	height: 338px;
+	margin: 0 auto;
+	overflow: hidden;
+	text-indent: -9999px;
+	width: 521px;
+}
+
+div#intro h1{
+	padding-top: 46px;
+}
+
+div#intro h1 a,
+div#intro h1 a:hover{
+	background: url(../img/logo-521x338.png) no-repeat;
+	cursor: pointer;
+}
+
+body.ua-ie6 div#intro h1 a,
+body.ua-ie6 div#intro h1 a:hover{
+	background: transparent;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/santander/50namao/site/img/logo-521x338.png', sizingMethod='image', enabled='true');
+}
+
+div#intro h2,
+div#intro div#disclaimer h3{
+	display: none;
+}
+
+div#intro ul{
+	overflow: hidden;
+	padding-top: 61px;
+}
+
+div#intro ul li,
+div#intro ul li a,
+div#intro ul li a:hover{
+	display: block;
+	height: 44px;
+	overflow: hidden;
+	text-indent: -9999px;
+}
+
+div#intro ul li a,
+div#intro ul li a:hover{
+	cursor: pointer;
+}
+
+div#intro ul li.disabled{
+	filter: alpha(opacity=30);
+	opacity: 0.30;
+	-moz-opacity: 0.30;
+}
+
+div#intro ul li.platinum{
+	float: left;
+	padding-left: 117px;
+	width: 275px;
+}
+
+div#intro ul li.platinum a,
+div#intro ul li.platinum a:hover{
+	background: url(../img/intro-bullet-platinum-card.png) no-repeat;
+}
+
+body.ua-ie6 div#intro ul li.platinum a,
+body.ua-ie6 div#intro ul li.platinum a:hover{
+	background: transparent;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/santander/50namao/site/img/intro-bullet-platinum-card.png', sizingMethod='image', enabled='true');
+}
+
+div#intro ul li.other{
+	float: right;
+	padding-right: 56px;
+	width: 399px;
+}
+
+div#intro ul li.other a,
+div#intro ul li.other a:hover{
+	background: url(../img/intro-bullet-other-cards.png) no-repeat;
+}
+
+body.ua-ie6 div#intro ul li.other a,
+body.ua-ie6 div#intro ul li.other a:hover{
+	background: transparent;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/santander/50namao/site/img/intro-bullet-other-cards.png', sizingMethod='image', enabled='true');
+}
+
+div#intro div#disclaimer{
+	clear: both;
+	margin-top: 19px;
+	text-align: center;
+}
+
+div#intro div#disclaimer p,
+div#intro div#disclaimer p a,
+div#intro div#disclaimer p a:hover{
+	clear: both;
+	color: #999;
+	font: normal 11px Arial;
+}
