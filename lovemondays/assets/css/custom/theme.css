@@ -1,0 +1,1003 @@
+@font-face{
+	font-family: 'georgia';
+	src: url('../../font/georgia/georgia.eot');
+	src: url('../../font/georgia/georgia.eot?#iefix') format('embedded-opentype'),
+		url('../../font/georgia/georgia.woff') format('woff'),
+		url('../../font/georgia/georgia.ttf') format('truetype'),
+		url('../../font/georgia/georgia.svg#georgia') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: 'helvetica';
+	src: url('../../font/helvetica/helvetica.eot');
+	src: url('../../font/helvetica/helvetica.eot?#iefix') format('embedded-opentype'),
+		url('../../font/helvetica/helvetica.woff') format('woff'),
+		url('../../font/helvetica/helvetica.ttf') format('truetype'),
+		url('../../font/helvetica/helvetica.svg#helvetica') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: 'letter-gothics';
+	src: url('../../font/letter-gothics/letter-gothics.eot');
+	src: url('../../font/letter-gothics/letter-gothics.eot?#iefix') format('embedded-opentype'),
+		url('../../font/letter-gothics/letter-gothics.woff') format('woff'),
+		url('../../font/letter-gothics/letter-gothics.ttf') format('truetype'),
+		url('../../font/letter-gothics/letter-gothics.svg#letter-gothics') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: 'kievit';
+	src: url('../../font/kievit/kievit.eot');
+	src: url('../../font/kievit/kievit.eot?#iefix') format('embedded-opentype'),
+		url('../../font/kievit/kievit.woff') format('woff'),
+		url('../../font/kievit/kievit.ttf') format('truetype'),
+		url('../../font/kievit/kievit.svg#kievit') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: 'futura';
+	src: url('../../font/futura/futura.eot');
+	src: url('../../font/futura/futura.eot?#iefix') format('embedded-opentype'),
+		url('../../font/futura/futura.woff') format('woff'),
+		url('../../font/futura/futura.ttf') format('truetype'),
+		url('../../font/futura/futura.svg#futura') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+::-moz-selection{
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+::selection{
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+*{
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.body,
+.wrapper.viewport,
+.wrapper.content{
+	min-height: 100vh;
+}
+
+.body{
+	font-size: 100%;
+	line-height: 100%;
+}
+
+/*################################################################################################*/
+/*################################### Generic ####################################################*/
+/*################################################################################################*/
+
+.navigation > .title{
+	display: none;
+}
+
+.anchor{
+	outline: 0;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+	transition: color 0.3s ease;
+	-webkit-font-smoothing: antialiased !important;
+	-moz-osx-font-smoothing: grayscale !important;
+}
+
+.fragment.strong{
+	font-weight: bold;
+}
+
+.fragment.emphasis{
+	font-style: italic;
+}
+
+/*################################################################################################*/
+/*################################### Header #####################################################*/
+/*################################################################################################*/
+
+.header{
+	background-color: rgba(0, 0, 0, 0.25);
+	border-radius: 25px;
+	left: 25px;
+	overflow: hidden;
+	padding: 10px 25px;
+	position: fixed;
+	top: 25px;
+	transition: background-color 0.5s ease;
+	z-index: 10;
+}
+
+.header:hover{
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header > .title,
+.header > .navigation.actions{
+	float: left;
+}
+
+.header > .title{
+	height: 30px;
+	width: 250px;
+}
+
+.header > .title .anchor{
+	background: center url(../../image/brand/love-mondays.svg) no-repeat;
+	background-size: cover;
+	display: block;
+	height: 100%;
+	text-indent: -9999px;
+	width: 100%;
+}
+
+.header > .title .fragment{
+	display: none;
+}
+
+.header > .navigation.actions .collection,
+.header > .navigation.breadcrumb .collection{
+	overflow: hidden;
+}
+
+.header > .navigation.actions{
+	right: 25px;
+	top: 25px;
+}
+
+.header > .navigation.actions .item{
+	float: left;
+	margin-left: 0.5rem;
+}
+
+.header > .navigation.actions .anchor{
+	border-radius: 7.5px;
+	display: block;
+	height: 30px;
+	overflow: hidden;
+	text-decoration: none;
+	transition: background-color 0.25s ease, border-color 0.25s ease, padding-right 0.25s ease;
+}
+
+.header > .navigation.actions .anchor:active{
+	color: #fff;
+}
+
+.header > .navigation.actions .item.menu .anchor:hover{
+	color: #fff;
+	border-color: #f58644;
+}
+
+.header > .navigation.actions .item.menu .anchor:active{
+	background-color: #cf3e49;
+}
+
+.header > .navigation.actions .item.search .anchor:hover{
+	color: #fff;
+	border-color: #0abed0;
+}
+
+.header > .navigation.actions .item.search .anchor:active{
+	background-color: #cf3e49;
+}
+
+.header > .navigation.actions .anchor:before{
+	color: #fff;
+	display: block;
+	float: left;
+	font-family: 'Material Icons';
+	font-size: 2rem;
+	height: 100%;
+	line-height: 30px;
+	text-align: center;
+	transition: color 0.25s ease;
+}
+
+.header > .navigation.actions .item.menu .anchor:before{
+	content: '\e5d2';
+}
+
+.header > .navigation.actions .item.menu .anchor:hover:before{
+	color: #cf3e49;
+}
+
+.header > .navigation.actions .item.menu .anchor:active:before{
+	color: #fff;
+}
+
+.header > .navigation.actions .item.search .anchor:before{
+	content: '\e8b6';
+}
+
+.header > .navigation.actions .item.search .anchor:hover:before{
+	color: #CF3E49;
+}
+
+.header > .navigation.actions .item.search .anchor:active:before{
+	color: #fff;
+}
+
+.header > .navigation.actions .item .anchor .fragment{
+	display: block;
+	color: rgba(0, 0, 0, 0.1);
+	float: left;
+	font-family: 'helvetica';
+	font-size: 0.75rem;
+	line-height: 30px;
+	max-width: 0;
+	opacity: 0;
+	transition: color 0.25s ease, max-width 0.5s ease, opacity 0.25s ease;
+	width: auto;
+}
+
+.header > .navigation.actions .item .anchor:hover .fragment{
+	color: inherit;
+}
+
+.header > .navigation.actions .item .anchor:active .fragment{
+	color: #fff;
+}
+
+.header > .navigation.actions .item .anchor:hover .fragment{
+	max-width: 50px;
+	opacity: 1;
+}
+
+.header > .navigation.actions .item .anchor .fragment:not(:first-child){
+	display: none;
+}
+
+/*################################################################################################*/
+/*################################### Company ####################################################*/
+/*################################################################################################*/
+
+.section.company > .title,
+.section.company > .title .anchor{
+	color: #0a466e;
+}
+
+.section.company > .title,
+.section.company > .title:before{
+	position: absolute;
+}
+
+.section.company > .title{
+	background-repeat: no-repeat;
+	background-position: -9999px -9999px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 2.5rem;
+	font-weight: 800;
+	left: calc(50% + 25px);
+	padding-top: 125px;
+	top: 25px;
+	z-index: 2;
+}
+
+.section.company > .title:before{
+	background: inherit;
+	background-position: center;
+	background-size: 80% auto;
+	border: solid 1px rgba(0, 0, 0, 0.1);
+	border-radius: 50px;
+	content: '';
+	display: block;
+	height: 100px;
+	left: 0;
+	overflow: hidden;
+	top: 0;
+	width: 100px;
+}
+
+.section.company > .title .anchor{
+	text-decoration: none;
+}
+
+.section.company > .title .anchor:hover,
+.section.company > .title .anchor:focus{
+	color: #dc5f69;
+}
+
+.section.company > .title .anchor:active{
+	color: #f86a76;
+}
+
+.section.company .article > .title{
+	display: none;
+}
+
+/*################################################################################################*/
+/*################################### Navigations @ Company ######################################*/
+/*################################################################################################*/
+
+.section.company > .navigation{
+	position: absolute;
+}
+
+.section.company > .navigation.actions,
+.section.company > .navigation.breadcrumb{
+	position: absolute;
+	z-index: 2;
+}
+
+.section.company > .navigation.actions .collection,
+.section.company > .navigation.breadcrumb .collection{
+	overflow: hidden;
+}
+
+.section.company > .navigation.actions{
+	right: 25px;
+	top: 25px;
+}
+
+.section.company > .navigation.actions .item{
+	float: left;
+}
+
+.section.company > .navigation.actions .item:not(:first-child){
+	margin-left: 1rem;
+}
+
+.section.company > .navigation.actions .anchor{
+	background-color: #fff;
+	border: solid 1px rgba(0, 0, 0, 0.1);
+	border-radius: 25px;
+	display: block;
+	height: 50px;
+	min-width: 50px;
+	padding-right: 0;
+	overflow: hidden;
+	text-decoration: none;
+	transition: background-color 0.25s ease, border-color 0.25s ease, padding-right 0.25s ease;
+}
+
+.section.company > .navigation.actions .anchor:hover{
+	padding-right: 25px;
+}
+
+.section.company > .navigation.actions .anchor:active{
+	color: #fff;
+}
+
+.section.company > .navigation.actions .item.follow .anchor:hover{
+	color: #0abed0;
+	border-color: #0abed0;
+}
+
+.section.company > .navigation.actions .item.follow .anchor:active{
+	background-color: #0abed0;
+	border-color: #0abed0;
+}
+
+.section.company > .navigation.actions .item.like .anchor:hover{
+	color: #f58644;
+	border-color: #f58644;
+}
+
+.section.company > .navigation.actions .item.like .anchor:active{
+	background-color: #f58644;
+	border-color: #f58644;
+}
+
+.section.company > .navigation.actions .item.review .anchor:hover{
+	color: #96ca6e;
+	border-color: #96ca6e;
+}
+
+.section.company > .navigation.actions .item.review .anchor:active{
+	background-color: #96ca6e;
+	border-color: #96ca6e;
+}
+
+.section.company > .navigation.actions .anchor:before{
+	color: rgba(0, 0, 0, 0.1);
+	display: block;
+	float: left;
+	font-family: 'Material Icons';
+	font-size: 1.5rem;
+	height: 100%;
+	line-height: 50px;
+	text-align: center;
+	transition: color 0.25s ease;
+	width: 50px;
+}
+
+.section.company > .navigation.actions .item.follow .anchor:before{
+	content: '\e8f4';
+}
+
+.section.company > .navigation.actions .item.follow .anchor:hover:before{
+	color: #0abed0;
+}
+
+.section.company > .navigation.actions .item.follow .anchor:active:before{
+	color: #fff;
+}
+
+.section.company > .navigation.actions .item.like .anchor:before{
+	content: '\e87d';
+}
+
+.section.company > .navigation.actions .item.like .anchor:hover:before{
+	color: #f58644;
+}
+
+.section.company > .navigation.actions .item.like .anchor:active:before{
+	color: #fff;
+}
+
+.section.company > .navigation.actions .item.review .anchor:before{
+	content: '\e873';
+}
+
+.section.company > .navigation.actions .item.review .anchor:hover:before{
+	color: #96ca6e;
+}
+
+.section.company > .navigation.actions .item.review .anchor:active:before{
+	color: #fff;
+}
+
+.section.company > .navigation.actions .item .anchor .fragment{
+	display: block;
+	color: rgba(0, 0, 0, 0.1);
+	float: left;
+	font-family: 'helvetica';
+	font-size: 0.75rem;
+	line-height: 50px;
+	max-width: 0;
+	opacity: 0;
+	transition: color 0.25s ease, max-width 0.5s ease, opacity 0.25s ease;
+	width: auto;
+}
+
+.section.company > .navigation.actions .item .anchor:hover .fragment{
+	color: inherit;
+}
+
+.section.company > .navigation.actions .item .anchor:active .fragment{
+	color: #fff;
+}
+
+.section.company > .navigation.actions .item .anchor:hover .fragment{
+	max-width: 50px;
+	opacity: 1;
+}
+
+.section.company > .navigation.actions .item .anchor .fragment:not(:first-child){
+	display: none;
+}
+
+.section.company > .navigation.breadcrumb{
+	left: calc(50% + 25px);
+	top: 210px;
+}
+
+.section.company > .navigation.breadcrumb .item{
+	color: #999;
+	float: left;
+	font-family: 'helvetica', sans-serif;
+	font-size: 0.85rem;
+	font-weight: normal;
+}
+
+.section.company > .navigation.breadcrumb .item .anchor{
+	color: #00ab6b;
+}
+
+.section.company > .navigation.breadcrumb .item:before{
+	content: '\00bb';
+	display: none;
+	float: left;
+	margin-right: 5px;
+}
+
+.section.company > .navigation.breadcrumb .item:not(:first-child){
+	margin-left: 5px;
+}
+
+.section.company > .navigation.breadcrumb .item:not(:first-child):before{
+	display: block;
+}
+
+.section.company > .navigation.breadcrumb .item .anchor{
+	text-decoration: none;
+}
+
+.section.company > .navigation.breadcrumb .item .anchor:hover,
+.section.company > .navigation.breadcrumb .item .anchor:focus{
+	color: #dc5f69;
+}
+
+.section.company > .navigation.breadcrumb .item .anchor:active{
+	color: #f86a76;
+}
+
+.section.company > .navigation.breadcrumb .item .anchor:hover,
+.section.company > .navigation.breadcrumb .item .anchor:focus{
+	text-decoration: underline;
+}
+
+/*################################################################################################*/
+/*################################### About @ Company ############################################*/
+/*################################################################################################*/
+
+.section.company .article.about{
+	background-color: #fff;
+	float: right;
+	height: 415px;
+	overflow: hidden;
+	padding: 185px 25px 0 25px;
+	position: relative;
+	width: calc(50% - 50px);
+	z-index: 1;
+}
+
+/*.section.company .article.about:before{
+	background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+	content: '';
+	display: block;
+	height: 100%;
+	left: -100%;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}*/
+
+.section.company .article.about .definition > .title{
+	display: none;
+}
+
+.section.company .article.about .definition.website .description{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1rem;
+}
+
+.section.company .article.about .definition.website .description,
+.section.company .article.about .definition.website .description .anchor{
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.section.company .article.about .definition.website .description .anchor{
+	text-decoration: none;
+}
+
+.section.company .article.about .definition.website .description .anchor:hover,
+.section.company .article.about .definition.website .description .anchor:focus{
+	color: #dc5f69;
+}
+
+.section.company .article.about .definition.website .description .anchor:active{
+	color: #f86a76;
+}
+
+.section.company .article.about .definition.profile{
+	margin-top: 3rem;
+	padding-top: calc(1.5rem + 1px);
+	position: relative;
+}
+
+.section.company .article.about .definition.profile:before{
+	background-color: rgba(0, 0, 0, 0.1);
+	display: block;
+	content: '';
+	height: 1px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100px;
+}
+
+.section.company .article.about .definition.profile .description{
+	color: rgba(0, 0, 0, 0.5);
+	font-family: 'georgia';
+	font-size: 1rem;
+	line-height: 1.5rem;
+	text-align: justify;
+}
+
+.section.company .article.about .definition.profile .description .paragraph:not(:first-child){
+	margin-top: 1rem;
+}
+
+/*################################################################################################*/
+/*################################### Rating @ Company ###########################################*/
+/*################################################################################################*/
+
+.section.company .article.rating{
+	background-color: #fff;
+	border: solid 1px #aaa;
+	box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.25);
+	left: 2.5%;
+	padding: 25px 0;
+	position: relative;
+	top: 500px;
+	width: 45%;
+	z-index: 5;
+}
+.section.company .article.rating > .collection{
+	padding: 30px 0;
+}
+
+.section.company .article.rating .definition.submissions,
+.section.company .article.rating .definition.overall{
+	left: 0;
+	position: absolute;
+	width: 35%;
+}
+
+.section.company .article.rating .definition.submissions{
+	bottom: 30px;
+	z-index: 1;
+}
+
+.section.company .article.rating .definition.overall{
+	color: #02253C;
+	height: 100%;
+	text-align: center;
+	top: 0;
+}
+
+.section.company .article.rating .definition.overall:after{
+	background-color: rgba(0, 0, 0, 0.1);
+	content: '';
+	display: block;
+	height: 80%;
+	position: absolute;
+	right: -10px;
+	top: 10%;
+	width: 1px;
+}
+
+.section.company .article.rating .definition.overall .title{
+	display: none;
+}
+
+.section.company .article.rating .definition.benefits,
+.section.company .article.rating .definition.carreer,
+.section.company .article.rating .definition.culture,
+.section.company .article.rating .definition.quality-of-life{
+	margin-left: calc(35% + 30px);
+	overflow: hidden;
+	position: relative;
+}
+
+.section.company .article.rating .definition.submissions .title,
+.section.company .article.rating .definition.overall .unity{
+	display: none;
+}
+
+.section.company .article.rating .definition.submissions .description{
+	font-family: 'kievit';
+	height: 100%;
+}
+
+.section.company .article.rating .definition.submissions .description .collection{
+	margin: 0 auto;
+	width: 70%;
+}
+
+.section.company .article.rating .definition.submissions .value,
+.section.company .article.rating .definition.submissions .unity{
+	color: rgba(0, 0, 0, 0.25);
+	display: inline-block;
+	font-size: 1rem;
+	font-style: normal;
+}
+
+.section.company .article.rating .definition.submissions .value{
+	font-weight: bold;
+	padding-left: 20px;
+	position: relative;
+}
+
+.section.company .article.rating .definition.submissions .item.likes .value{
+	color: #f58644;
+}
+
+.section.company .article.rating .definition.submissions .item.followers .value{
+	color: #0abed0;
+}
+
+.section.company .article.rating .definition.submissions .item.reviews .value{
+	color: #96ca6e;
+}
+
+.section.company .article.rating .definition.submissions .item:not(:first-child){
+	margin-top: 5px;
+}
+
+.section.company .article.rating .definition.submissions .description .item .value:before{
+	font-family: 'Material Icons';
+	display: inline-block;
+	font-size: 1rem;
+	left: 0;
+	margin-top: -0.4rem;
+	position: absolute;
+	top: 50%;
+}
+
+.section.company .article.rating .definition.submissions .description .item.likes .value:before{
+	content: '\e87d';
+}
+
+.section.company .article.rating .definition.submissions .description .item.followers .value:before{
+	content: '\e8f4';
+}
+
+.section.company .article.rating .definition.submissions .description .item.reviews .value:before{
+	content: '\e873';
+}
+
+.section.company .article.rating .definition.overall .value{
+	font-family: 'helvetica';
+	font-size: 7rem;
+	font-style: normal;
+	font-weight: bold;
+	height: 7rem;
+	left: 0;
+	letter-spacing: -0.5rem;
+	line-height: 7rem;
+	margin-top: calc(-3.5rem - 30px);
+	position: absolute;
+	top: 50%;
+	width: 100%;
+}
+
+.section.company .article.rating .definition.benefits .title,
+.section.company .article.rating .definition.benefits .description,
+.section.company .article.rating .definition.carreer .title,
+.section.company .article.rating .definition.carreer .description,
+.section.company .article.rating .definition.culture .title,
+.section.company .article.rating .definition.culture .description,
+.section.company .article.rating .definition.quality-of-life .title,
+.section.company .article.rating .definition.quality-of-life .description{
+	float: left;
+}
+
+.section.company .article.rating .definition.benefits .title,
+.section.company .article.rating .definition.carreer .title,
+.section.company .article.rating .definition.culture .title,
+.section.company .article.rating .definition.quality-of-life .title{
+	color: rgba(0, 0, 0, 0.75);
+	font-family: 'helvetica';
+	font-size: 0.9rem;
+	text-align: right;
+	padding: 10px 0;
+	width: 50%;
+}
+
+.section.company .article.rating .definition.benefits .description,
+.section.company .article.rating .definition.carreer .description,
+.section.company .article.rating .definition.culture .description,
+.section.company .article.rating .definition.quality-of-life .description{
+	height: 100%;
+	left: 50%;
+	position: absolute;
+	top: 0;
+	width: 50%;
+}
+
+.section.company .article.rating .definition.benefits .description .fragment,
+.section.company .article.rating .definition.carreer .description .fragment,
+.section.company .article.rating .definition.culture .description .fragment,
+.section.company .article.rating .definition.quality-of-life .description .fragment{
+	display: none;
+}
+
+.section.company .article.rating .definition.benefits .description .wrapper,
+.section.company .article.rating .definition.carreer .description .wrapper,
+.section.company .article.rating .definition.culture .description .wrapper,
+.section.company .article.rating .definition.quality-of-life .description .wrapper{
+	background-color: #ccc;
+	height: 1.5rem;
+	left: 0;
+	margin: -0.75rem 0 0 10px;
+	max-width: 120px;
+	min-width: 120px;
+	outline: 0;
+	position: absolute;
+	top: 50%;
+}
+
+.section.company .article.rating .definition.benefits .description .wrapper:before,
+.section.company .article.rating .definition.carreer .description .wrapper:before,
+.section.company .article.rating .definition.culture .description .wrapper:before,
+.section.company .article.rating .definition.quality-of-life .description .wrapper:before{
+	background-color: #fe4365;
+	content: '';
+	display: block;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: inherit;
+}
+
+.section.company .article.rating .definition.benefits .description .wrapper .svg,
+.section.company .article.rating .definition.carreer .description .wrapper .svg,
+.section.company .article.rating .definition.culture .description .wrapper .svg,
+.section.company .article.rating .definition.quality-of-life .description .wrapper .svg{
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: calc(100% + 1px);
+}
+
+.section.company .article.rating .definition.benefits .description .wrapper .svg .text,
+.section.company .article.rating .definition.carreer .description .wrapper .svg .text,
+.section.company .article.rating .definition.culture .description .wrapper .svg .text,
+.section.company .article.rating .definition.quality-of-life .description .wrapper .svg .text{
+	font-family: 'Material Icons';
+	font-size: 1.5rem;
+	text-anchor: start;
+	dominant-baseline: text-before-edge;
+}
+
+/*################################################################################################*/
+/*################################### Media @ Company ############################################*/
+/*################################################################################################*/
+
+.section.company .article.media{
+	background-color: #fff;
+	color: #fff;
+	height: 600px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 50%;
+}
+
+.section.company .article.media:after{
+	background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+	content: '';
+	display: block;
+	height: 100%;
+	right: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.section.company .article.media .wrapper{
+	background-color: #ededed;
+	overflow: hidden;
+	padding: 0 0 50px 600px;
+	width: calc(100vw - 617px);
+}
+
+.section.company .article.media .wrapper:before{
+	box-shadow: inset 0 7px 7px -7px rgba(50, 50, 50, 0.5);
+	content: '';
+	display: block;
+	height: 150px;
+	left: 0;
+	position: absolute;
+	top: 600px;
+	width: 100vw;
+}
+
+.section.company .article.media .quote{
+	display: table;
+	margin: 600px 0 0 0;
+	padding: 25px 0 25px calc(50vw - 608.5px);
+	width: 10000px;
+}
+
+.section.company .article.media .definition{
+	float: left;
+	height: 100px;
+	width: 100px;
+}
+
+.section.company .article.media .definition:not(:first-child){
+	margin-left: 25px;
+}
+
+.section.company .article.media .definition,
+.section.company .article.media .definition > .title{
+	background-position: -9999px -9999px;
+	background-repeat: no-repeat;
+}
+
+.section.company .article.media .definition > .title,
+.section.company .article.media .definition > .title .anchor{
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
+.section.company .article.media .definition > .title{
+	background-image: inherit;
+	position: relative;
+}
+
+.section.company .article.media .definition > .title .anchor{
+	background-color: rgba(255, 255, 255, 0.5);
+	background-image: inherit;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto 200px;
+	border: solid 2px #fff;
+	border-radius: 100px;
+	box-shadow: 0px rgba(50, 50, 50, 0.25);
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	text-indent: -9999px;
+	top: 0;
+	transition: border-color 0.25s ease, box-shadow 0.25s ease, height 0.25s ease, left 0.25s ease, top 0.25s ease, width 0.25s ease;
+	z-index: 1;
+}
+
+.section.company .article.media .definition.active > .title .anchor{
+	border-color: #00ab6b;
+}
+
+.section.company .article.media .definition > .title .anchor:hover{
+	box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.25);
+	height: calc(100% + 100px);
+	left: -50px;
+	top: -50px;
+	width: calc(100% + 100px);
+	z-index: 2;
+}
+
+.section.company .article.media .definition > .title .fragment{
+	display: none;
+}
+
+.section.company .article.media .definition > .description{
+	background-image: inherit;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	transition: opacity 1s ease;
+	width: 100%;
+}
+
+.section.company .article.media .definition.image > .description{
+	text-indent: -9999px;
+}
+
+.section.company .article.media .definition.active > .description{
+	opacity: 1;
+}
+
+/*################################################################################################*/
+/*################################### Jobs @ Company #############################################*/
+/*################################################################################################*/
+
+.section.company .article.jobs{
+	background-color: #fff;
+	clear: both;
+	display: block;
+	padding: 25px 0;
+	position: relative;
+	top: 150px;
+	width: 100%;
+}
+
+/*################################################################################################*/
+/*################################### Footer #####################################################*/
+/*################################################################################################*/
+
+.footer{
+}
